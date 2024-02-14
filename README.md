@@ -17,7 +17,7 @@
 - steam accounts
 - crypto wallets
 
-### ill add more stuff if u want me to dm me Progamer3321#2487 on discord or just dm me anything, i want friends :)
+### ill add more stuff if u want me to dm me maksvavrik on discord or just dm me anything, i want friends :)
 
   
 #### Embed example: 
